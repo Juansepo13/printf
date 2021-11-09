@@ -1,14 +1,14 @@
-#include <stdio.h>
-#include <stdarg.h>
-#include <unistd.h>
-#include "main.h"
+/**#include <stdio.h>*/
+/**#include <stdarg.h>*/
+/**#include <unistd.h>*/
+/**#include "main.h"*/
 /**
  * _printf - return the number of characters printed
  * @format: pointer
  * @char: variable
  */
 
-int _putchar(char c)
+/**int _putchar(char c)*/
 {
 	return (write(1, &c, 1));
 }
