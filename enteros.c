@@ -1,23 +1,24 @@
 #include "main.h"
 #include <unistd.h>
-
-
-/**int printf_int(int mylista)
-{
-	int number;
-	int cifras;
-	number = mylista;
-	cifras = coundig(number);
-	print_number(number);
-	}*/
+/**
+ * printf_int - the number of characters is saved
+ * @mylista: argumentos
+ * Return: 1
+*/
 int printf_int(va_list mylista)
 {
 	int number;
 	int cifras;
+
 	number = va_arg(mylista, int)
 	cifras = coundig(number);
 	print_number(number);
 }
+/**
+ * coundig - count the number of digits
+ * @number: entry number
+ * Return: (cont)
+*/
 int coundig(int number)
 {
 	int cont = 0;
@@ -31,14 +32,19 @@ int coundig(int number)
 		while (number != 0)
 		{
 			number /= 10;
-			cont ++;
+			cont++;
 		}
 	}
 	return (cont);
 }
+/**
+ * print_number - print the number
+ * @number: print the number
+ */
 void print_number(int number)/** se vuelve negativo otravez*/
 {
 	int nump;
+
 	if (number < 0)
 	{
 		_putchar ('-');
@@ -52,7 +58,7 @@ void print_number(int number)/** se vuelve negativo otravez*/
 	{
 		if (nump / 10 != 0)
 		{
-			print_number(nump /10);
+			print_number(nump / 10);
 		}
 		_putchar ((nump % 10) + '0');
 	}
