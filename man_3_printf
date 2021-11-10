@@ -1,7 +1,7 @@
 .TH _PRINTF "Nov 10 2021" "_printf manpage"
 
 .SH NAME
-	task_printf.c - Produces output according to a format
+	task_printf.c - Produces output according to a format.
 
 .SH SYNOPSIS
 
@@ -29,11 +29,36 @@
 	of characters printed, not including the NULL used to finish the output
 	of strings.
 
-.SH SEE ALSO
+.SH EXAMPLE
+
+	To print this string:
+	#include <stdio.h>
+	#include "main.h"
+
+	int printf_s(va_list s)
+	{
+		int i = 0;
+		char *str = va_arg(s, char *);
+
+		if (str == NULL)
+		{
+			str = "(null)";
+		}
+		for (i = 0; str[i] != '\0'; i++)
+		{
+			_putchar(str[i]);
+		}
+			return (i);
+		}
 
 
+		int printf_char(va_list c)
+		{
+			_putchar(va_arg(c, int));
+			return (1);
+		}
 
 .SH AUTHOR
 
-DANIEL RIVERA
-JUAN POSADA
+DANIEL RIVERA @ruizdani301
+JUAN POSADA   @JuanSeb35904130 
