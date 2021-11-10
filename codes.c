@@ -21,10 +21,10 @@ int printf_s(va_list s)
 	return (i);
 }
 /**
-* printf_char - function print string
-* @c: lista
-* Return: (1)
-*/
+ * printf_char - function print string
+ * @c: lista
+ * Return: (1)
+ */
 int printf_char(va_list c)
 {
 	_putchar(va_arg(c, int));

@@ -3,15 +3,15 @@
  * get_especificador - listado de especificadores
  * @s: pointer
  * Return: (NULL)
-*/
+ */
 int (*get_especificador(const char *s))(va_list)/** se qita int a*/
 {
-	estructura_t estructura_t2[] =	{
+	estructura_t estructura_t2[] ={
 		{"c", printf_char},
 		{"s", printf_s}, /** se cambio str a s**/
 		{"%", printf_por},
 		/**{"d", printf_int},*/
-		/**	{"i", printf_int},*/
+		/**{"i", printf_int},*/
 		{NULL, NULL}
 	};
 	int a;
