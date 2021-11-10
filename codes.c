@@ -1,25 +1,32 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_s - function print string
- *@lista: lista
+ * printf_s - function print string
+ * @s: lista
+ * Return: (i)
  */
-int printf_s(lista char)  /** iba lista. se grego char, y se cambia void porint*/
+int printf_s(va_list s)
 {
 	int i = 0;
-	char *s = va_arg(lista, char *);
-	/**puts(s);*/
-	for ( i = 0; s[i] != '\0'; i++)
+	char *str = va_arg(s, char *);
+
+	if (str == NULL)
 	{
-		putchar(s[i]);/** retiramos _de putchar*/
+		str = "(null)";
 	}
-	i++;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	return (i);
 }
 /**
-4   * print_c - function print string
-5   *@lista: lista
-6   */
-int printf_char(lista, char *c_format)
+* printf_char - function print string
+* @c: lista
+* Return: (1)
+*/
+int printf_char(va_list c)
 {
-	putchar(va_arg(lista, int));/**fncion print c, se cambio _ del putchar*/
+	_putchar(va_arg(c, int));
+	return (1);
 }
