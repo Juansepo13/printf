@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * _printf - Function that prints all
+ *
  * Return: Always 0
  */
 int main(void)
@@ -38,12 +38,7 @@ int main(void)
 	len2 = printf("Percent:[%%]\n");
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
-<<<<<<< HEAD
-	_printf("Unknown:[%r]\n");
-/*	printf("Unknown:[%r]\n"); */
-=======
-/*	_printf("Unknown:[%r]\n");*/
-/*	printf("Unknown:[%r]\n");*/
->>>>>>> 7733b7eb635aaef343ce5ad8c94d7e2f3a419331
+	/*_printf("Unknown:[%r]\n");*/
+	/*printf("Unknown:[%r]\n");*/
 	return (0);
 }
