@@ -1,16 +1,11 @@
-int _printf(const char *format, ...);
-int _putchar (char c);
-int (*get_especificador(const char *s))(va_list);
-int printf_s(va_list s);
-int printf_char(va_list c);
-int printf_dec(va_list, char *c_format);
-int print_int(va_list, char *c_format);.TH _
+.TH _PRINTF "Nov 10 2021" "_printf manpage"
 
 .SH NAME
+	task_printf.c - Produces output according to a format
 
 .SH SYNOPSIS
 
-.B      #include "holberton.h"
+.B      #include "main.h"
 \fB     int _printf(const char *format, ...);
 \fB     int _putchar (char c);
 \fB     int (*get_especificador(const char *s))(va_list);
@@ -21,28 +16,21 @@ int print_int(va_list, char *c_format);.TH _
 
 .SH DESCRIPTION
 
+	Version of the printf function, code written by Daniel Rivera,
+	Juan Posada, with the help of cohort 15 student Shannel Bejarano
+	who guided us through a process with structures.
 
-
-
-
-
-
-
-
-
+	The printf functions produce results according to a format.
+	The printf function writes the output to the given output stream.
 
 .SH RETURN VALUE
 
-
-
-
-.SH EXAMPLE
-
-
-
-
+    	If the function has a successful return, it will return the number
+	of characters printed, not including the NULL used to finish the output
+	of strings.
 
 .SH SEE ALSO
+
 
 
 .SH AUTHOR
