@@ -8,21 +8,22 @@
 #include <limits.h>
 
 /**
- * struct - estructura
- *@estructura_t: Prototipos y datos
+ * struct estructura - estructura
+ *@espe: Prototipos y datos
  *@func: Funcion para imprimir caracteres
- * Return: estructura
-*/
-va_list = lista
+ */
+
 typedef struct estructura
 {
 	char  *espe;
 	int (*func)(va_list);
-}estructura_t;
+} estructura_t;
 
 int _printf(const char *format, ...);
-int printf_s(va_list, char *c_format);
-int printf_char(va_list, char *c_format);
+int _putchar (char c);
+int (*get_especificador(const char *s))(va_list);
+int printf_s(va_list s);
+int printf_char(va_list c);
 int printf_dec(va_list, char *c_format);
 int print_int(va_list, char *c_format);
 

@@ -4,52 +4,45 @@
  * @format: incluye el contenido de los estring
  * Return: cantidad de caracteres
  */
-
 int _printf(const char *format, ...)
 {
-	const char *c_format;/**retirmaos coma despues del c_format*/
-	va_list = (lista);
+	va_list mylista;
 	int (*func)(va_list);
+	int counter = 0;
+	int iterator = 0;
 
-	/** char *str;*/
-	int counter;
-	int iterator;
-	*c_format = format;
-
-	if (c_format == NULL)
+	if (format == NULL)
 	{
 		return (-1);
 	}
-	va_start(lista, c_format);
+	va_start(mylista, format);
 
-	counter = 0;
-	iterator = 0;
-	while (c_format[iterator]!= '\0')
+	while (format[iterator] != '\0')
 	{
-		if (c_format[iterator] != '%')
-			{
-				_putchar(c_format[iterator]);
-				iterator++;
-				counter++;
-				continue;
-			}
-		if (c_format[iterator + 1] == '\0')
+		if (format[iterator] != '%')
 		{
-		return (-1);
+			_putchar(format[iterator]);
+			iterator++;
+			counter++;
+			continue;
 		}
-		func = get_especificador(c_format + iterator + 1);
+		if (format[iterator + 1] == '\0')
+		{
+			return (-1);
+		}
+		func = get_especificador(format + iterator + 1);
 		if (func != NULL)
 		{
-			counter = counter + func(lista);
+			counter = counter + func(mylista);
 			iterator++;
 		}
 		else
 		{
-			_putchar(c_format[iterator]);
+			_putchar(format[iterator]);
 			counter++;
 		}
 		iterator++;
 	}
-	va_end(lista);
+	va_end(mylista);
 	return (counter);
 }
