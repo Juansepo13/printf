@@ -30,3 +30,13 @@ int printf_char(va_list c)
 	_putchar(va_arg(c, int));
 	return (1);
 }
+/**
+ * printf_por - print %
+ * @mylista: list
+ * Return: (1)
+ */
+int printf_por(va_list __attribute__((unused))mylista)
+{
+	_putchar('%');
+	return (1);
+}
