@@ -19,12 +19,14 @@ typedef struct estructura
 	int (*func)(va_list);
 } estructura_t;
 
+int coundig(int number);
+void print_number(int number);
 int _printf(const char *format, ...);
 int _putchar (char c);
 int (*get_especificador(const char *s))(va_list);
 int printf_s(va_list s);
 int printf_char(va_list c);
-int printf_dec(va_list, char *c_format);
-int print_int(va_list, char *c_format);
+int printf_int(va_list mylista);
+int printf_por(va_list __attribute__((unused))mylista);
 
 #endif
