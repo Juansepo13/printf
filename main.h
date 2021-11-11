@@ -19,6 +19,8 @@ typedef struct estructura
 	int (*func)(va_list);
 } estructura_t;
 
+int coundig(int number);
+void print_number(int number);
 int _printf(const char *format, ...);
 int _putchar (char c);
 int (*get_especificador(const char *s))(va_list);
