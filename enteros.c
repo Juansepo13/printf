@@ -24,6 +24,10 @@ int coundig(int number)
 {
 	int cont = 0;
 
+	if (number == 0)
+	{
+		cont++;
+	}
 	if (number < 0)
 	{
 		number *= (-1);
