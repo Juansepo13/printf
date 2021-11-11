@@ -12,13 +12,16 @@ int printf_int(va_list mylista)
 
 	number = va_arg(mylista, int);
 	cifras = coundig(number);
+
+
+
 	if (number < 0)
 	{
 		cifras++;
 	}
 	if (number == 0)
 	{
-		cifras += 1;
+		cifras = 1;
 	}
 	print_number(number);
 	return (cifras);
@@ -34,11 +37,13 @@ int coundig(int number)
 
 	(number < 0) ? (i = (number * (-1))) : (i = number);
 
+
 	do {
 		i /= 10;
-		cont++;
-	} while (number != 0);
-	return (cont);
+		++cont;
+	} while (i != 0);
+
+		return (cont);
 }
 /**
  * print_number - print the number
@@ -46,12 +51,12 @@ int coundig(int number)
  */
 void print_number(int number)/** se vuelve negativo otravez*/
 {
-	int nump;
+	unsigned int nump;
 
 	if (number < 0)
 	{
 		_putchar ('-');
-		nump = number * (-1);
+		nump = -number;
 	}
 	else
 	{
@@ -59,7 +64,7 @@ void print_number(int number)/** se vuelve negativo otravez*/
 	}
 	if (number != 0)
 	{
-		if (nump / 10 != 0)
+		if (nump / 10)
 		{
 			print_number(nump / 10);
 		}
