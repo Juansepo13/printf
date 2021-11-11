@@ -24,6 +24,10 @@ int coundig(int number)
 {
 	int cont = 0;
 
+	if (number == 0)
+	{
+		cont++;
+	}
 	if (number < 0)
 	{
 		number *= (-1);
@@ -62,5 +66,5 @@ void print_number(int number)/** se vuelve negativo otravez*/
 		_putchar ((nump % 10) + '0');
 	}
 	else
-		_putchar (nump + '0');
+		_putchar (number + '0');
 }
