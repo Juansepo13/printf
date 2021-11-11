@@ -9,7 +9,7 @@ int printf_int(va_list mylista)
 {
 	int number;
 	int cifras;
-	
+
 	number = va_arg(mylista, int);
 	cifras = coundig(number);
 	print_number(number);
