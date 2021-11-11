@@ -5,13 +5,15 @@
  * @mylista: argumentos
  * Return: 1
  */
-int printf_int(va_list mylista) /* esto es un comentario */
+int printf_int(va_list mylista)
 {
 	int number;
 	int cifras;
 
-	number = va_arg(mylista, int);
 	cifras = coundig(number);
+
+	number = va_arg(mylista, int);
+
 	if (number < 0)
 	{
 		cifras++;
@@ -30,17 +32,14 @@ int printf_int(va_list mylista) /* esto es un comentario */
  */
 int coundig(int number)
 {
-	int cont = 0;
+	unsigned int i, cont = 0;
 
-	if (number < 0)
-	{
-		number *= (-1);
-	}
-	while (number != 0)
-	{
-		number /= 10;
+	(number < 0) ? (i = (n * (-1))) : (i = n);
+
+	do {
+		i /= 10;
 		cont++;
-	}
+	} while (number != 0)
 	return (cont);
 }
 /**
