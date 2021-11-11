@@ -10,10 +10,8 @@ int printf_int(va_list mylista)
 	int number;
 	int cifras;
 
-	cifras = coundig(number);
-
 	number = va_arg(mylista, int);
-
+	cifras = coundig(number);
 	if (number < 0)
 	{
 		cifras++;
@@ -34,12 +32,12 @@ int coundig(int number)
 {
 	unsigned int i, cont = 0;
 
-	(number < 0) ? (i = (n * (-1))) : (i = n);
+	(number < 0) ? (i = (number * (-1))) : (i = number);
 
 	do {
 		i /= 10;
 		cont++;
-	} while (number != 0)
+	} while (number != 0);
 	return (cont);
 }
 /**
