@@ -5,7 +5,7 @@
  * @mylista: argumentos
  * Return: 1
  */
-int printf_int(va_list mylista)
+int printf_int(va_list mylista) /* esto es un comentario */
 {
 	int number;
 	int cifras;
