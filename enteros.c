@@ -12,6 +12,14 @@ int printf_int(va_list mylista)
 
 	number = va_arg(mylista, int);
 	cifras = coundig(number);
+	if (number < 0)
+	{
+		cifras++;
+	}
+	if (number == 0)
+	{
+		cifras += 1;
+	}
 	print_number(number);
 	return (cifras);
 }
@@ -24,14 +32,9 @@ int coundig(int number)
 {
 	int cont = 0;
 
-	if (number == 0)
-	{
-		cont++;
-	}
 	if (number < 0)
 	{
 		number *= (-1);
-		cont += 1;
 	}
 	while (number != 0)
 	{
