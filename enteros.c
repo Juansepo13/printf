@@ -4,7 +4,7 @@
  * printf_int - the number of characters is saved
  * @mylista: argumentos
  * Return: 1
-*/
+ */
 int printf_int(va_list mylista)
 {
 	int number;
@@ -27,7 +27,7 @@ int printf_int(va_list mylista)
  * coundig - count the number of digits
  * @number: entry number
  * Return: (cont)
-*/
+ */
 int coundig(int number)
 {
 	int cont = 0;
