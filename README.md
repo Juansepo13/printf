@@ -22,7 +22,7 @@ For this project, students are expected to look at these concepts:
 * Pair Programming - How To
 * Flowcharts
 * Approaching a Project
-```
+
 
 ## Files included
 
