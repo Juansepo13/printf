@@ -14,7 +14,7 @@ Cohort 16.
    QA review fully automated.
 ```
 
-## Concepts
+Concepts
 For this project, students are expected to look at these concepts:
 
 ```
@@ -23,7 +23,7 @@ Pair Programming - How To
 Flowcharts
 Approaching a Project
 ```
-## Files included
+Files included
 
 | File                 | Details                                    |
 |--------------------- | ------------------------------------------ |
@@ -32,10 +32,9 @@ Approaching a Project
 | [misc.c](./misc.c)   | putchar function and strlen                |
 | [codes.c](./strings.c) | functions for printing strings           |
 | [enteros.c](./numbers.c) | functions for print integer numbers    |
-
-
-# Ejecutando las pruebas
 ```
+# Ejecutando las pruebas
+
 	int len;
 	int len2;
 
@@ -54,13 +53,6 @@ Approaching a Project
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
 ```
-
-# Background Context
-
-```
-Write your own printf function.
-```
-
 ## Author
 ```
 * **Juan Posada @JuanSeb35904130** - [JuanPosada](https://github.com/Juansepo13)
