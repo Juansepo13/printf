@@ -18,12 +18,13 @@ Concepts
 For this project, students are expected to look at these concepts:
 
 ```
-Group Projects
-Pair Programming - How To
-Flowcharts
-Approaching a Project
+* Group Projects
+* Pair Programming - How To
+* Flowcharts
+* Approaching a Project
 ```
-##  Files included
+
+## Files included
 
 | File                 | Details                                    |
 |--------------------- | ------------------------------------------ |
@@ -32,7 +33,7 @@ Approaching a Project
 | [misc.c](./misc.c)   | putchar function and strlen                |
 | [codes.c](./strings.c) | functions for printing strings           |
 | [enteros.c](./numbers.c) | functions for print integer numbers    |
-```
+
 # Ejecutando las pruebas
 
 	int len;
