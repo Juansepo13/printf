@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+#include <unistd.h>/** solo para putchar*/
 /**
  * printf_int - the number of characters is saved
  * @mylista: argumentos
@@ -7,11 +7,11 @@
  */
 int printf_int(va_list mylista)
 {
-	int number;
+	int number;/** se almacena el argumento*/
 	int cifras;
 
 	number = va_arg(mylista, int);
-	cifras = coundig(number);
+	cifras = coundig(number);/** es un contador*/
 
 
 
@@ -64,9 +64,9 @@ void print_number(int number)/** se vuelve negativo otravez*/
 	}
 	if (number != 0)
 	{
-		if (nump / 10)
+		if (nump / 10 == 0)
 		{
-			print_number(nump / 10);
+			print_number(nump / 10);/**recursividad*/
 		}
 		_putchar ((nump % 10) + '0');
 	}
